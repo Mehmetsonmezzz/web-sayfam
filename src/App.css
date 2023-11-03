@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,19 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+/* App.css */
+/* Normal Mod Stilleri */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mod Stilleri */
+
+.dark{
+  background-color: black;
+  color: white;
 }

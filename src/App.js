@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Tarayıcı açıldığında yerel depolamadan dark mod tercihini al
+  useEffect(() => {
+    const storedDarkMode = localStorage.getItem("darkMode");
+    if (storedDarkMode) {
+      setIsDarkMode(storedDarkMode === "true");
+    }
+  }, []);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  // Dark mod tercihini yerel depolamada sakla
+  useEffect(() => {
+    localStorage.setItem("darkMode", isDarkMode);
+  }, [isDarkMode]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${isDarkMode ? "dark" : ""}`}>
+      <button onClick={toggleDarkMode}>
+        {isDarkMode ? "Normal Mod" : "Dark Mod"}
+      </button>
+      <h1>My App</h1>
+      <p>This is a sample app with dark mode.</p>
     </div>
   );
 }
