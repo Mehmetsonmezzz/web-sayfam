@@ -1,0 +1,23 @@
+.headerContainer{
+    display: flex;
+}
+
+.leftDiv{
+ background: #4731D3;
+ width: 75%;
+ height: 671px;
+}
+.leftDiv.dark{
+    background: #171043;
+   }
+
+.rightDiv{
+    background: #CBF281;
+    width: 25%;
+    height: 671px;
+}
+
+.rightDiv.dark{
+    background: #1A210B;
+
+}
