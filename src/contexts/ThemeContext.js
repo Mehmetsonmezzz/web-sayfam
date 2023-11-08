@@ -8,14 +8,14 @@ export const useTheme = () => {
 
 export const ThemeProvider = ({ children }) => {
   const storedTheme = localStorage.getItem("theme");
-  const [theme, setTheme] = useState(storedTheme || "light"); // Eğer localStorage'da tema varsa onu kullan, yoksa varsayılan "light" temasını kullan
+  const [theme, setTheme] = useState(storedTheme || "dark");
 
   useEffect(() => {
-    localStorage.setItem("theme", theme); // Tema değiştiğinde localStorage güncelle
+    localStorage.setItem("theme", theme); // localstorage değerini değiştir
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (

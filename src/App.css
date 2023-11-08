@@ -1,3 +1,7 @@
+ *{
+  border: 1px solid black;
+} 
+
 /* .App {
   text-align: center;
 }
@@ -40,14 +44,14 @@
 
 /* App.css */
 /* Normal Mod Stilleri */
-body {
+/* body {
   background-color: white;
   color: black;
-}
+} */
 
 /* Dark Mod Stilleri */
 
-.dark{
+/* .dark{
   background-color: black;
   color: white;
-}
+} */
