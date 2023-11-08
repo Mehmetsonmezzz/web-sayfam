@@ -5,8 +5,10 @@ import axios from "axios";
 import en from "./languages/en";
 import Header from "./pages/header/Header";
 import Footer from "./pages/footer/Footer";
+
 import { useTheme } from "./contexts/ThemeContext";
 import Skills from "./pages/Skills";
+import Denemee from "./pages/Denemee";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -76,15 +78,16 @@ function App() {
 
   return (
     <div className={`App ${theme === "dark" ? "dark" : ""}`}>
-      <Header />
+      {/* <Header />
       <Skills />
-      <Footer />
-      <div>
+      <Footer /> */}
+      <Denemee/>
+      {/* <div>
         <button onClick={languageHandler}>{t("language")}</button>
         <h1>{t("welcome")}</h1>
         <h1>{translatedText}</h1>
         <p>{t("about")}</p>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div className="flex relative">
       <div
-        className={`h-custom bg-[#171043] text-white dark:"bg-[#4731D3] text-black"
+        className={`h-custom z-[1] bg-[#171043] text-white dark:"bg-[#4731D3] text-black"
             w-3/4 ${
               theme === "dark"
                 ? "bg-[#171043] text-white"
@@ -42,7 +42,7 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`h-custom w-1/4 ${
+        className={`h-custom w-1/4 z-[1] ${
           theme === "dark"
             ? "bg-[#1A210B] text-white"
             : "bg-[#CBF281] text-white"
@@ -54,9 +54,7 @@ const Header = () => {
             <span className="slider"></span>
           </label>
         </div>
-        <div className="">
-          <img src={hero} alt="Header img"></img>
-        </div>
+        
       </div>
     </div>
   );

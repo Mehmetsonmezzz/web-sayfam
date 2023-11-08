@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+} 
+
+.main-container {
+    background-color: blue;
+    height: 671px;
+    position: relative;
+}
+
+
+.container-about {
+    position: relative;
+    height: 100%;
+  }
+
+.container-to-right {
+    background-color: yellow;
+    width: 432px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 100%;
+}
+
+.main-container img {
+    position: absolute;
+    top: 100px;
+    right: 10%;
+    z-index: 3;
+}
+
+.container-text {
+    position: relative;
+    top: 150px;
+    left: 200px;
+}
+
+.container-text h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.container-text {
+    color: white;
+    font-size: 30px;
+}
+
+.navbar {
+    width: 73%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    position: relative;
+    top: 20px;
+}
+
+.container-to-right button {
+    padding: 20px 0 0 20px;
+}
