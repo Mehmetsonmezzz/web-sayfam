@@ -9,6 +9,8 @@ import Footer from "./pages/footer/Footer";
 import { useTheme } from "./contexts/ThemeContext";
 import Skills from "./pages/Skills";
 import Denemee from "./pages/Denemee";
+import Profile from "./pages/Profile";
+import Projects from "./pages/Projects";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -78,10 +80,15 @@ function App() {
 
   return (
     <div className={`App ${theme === "dark" ? "dark" : ""}`}>
-      {/* <Header />
+      {/* 
       <Skills />
-      <Footer /> */}
-      <Denemee/>
+       */}
+      {/* <Header /> */}
+      <Denemee />
+      <Skills />
+      <Profile />
+      <Projects />
+      <Footer />
       {/* <div>
         <button onClick={languageHandler}>{t("language")}</button>
         <h1>{t("welcome")}</h1>
