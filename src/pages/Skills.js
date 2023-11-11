@@ -1,24 +1,25 @@
 import { Images } from "../assets/images/images";
+import { useLanguage } from "../contexts/LanguageContext";
 export default function Skills() {
+  const { t } = useLanguage();
   return (
-    <div className="flex w-[70%] py-[6rem]  lg:mx-auto justify-between">
-      <h2 className="w-[33%] ml-6 text-indigo-700 text-3xl lg:text-5xl font-bold tracking-wide">
-        Skills
-      </h2>
-      <div className=" flex gap-10 lg:gap-16  flex-wrap justify-around">
-        {Images.skills.map((item, index) => {
-          return (
-            <div
-              className="xl:flex gap-6 items-center  w-[30%] lg:w-[35%]"
-              key={index}
-            >
-              <img src={item.img} alt={item.name} />
-              <h3 className="  text-neutral-500 lg:text-2xl font-medium  leading-9">
-                {item.name}
-              </h3>
-            </div>
-          );
-        })}
+    <div className="dark:bg-[#252128]">
+      <div className="lg:flex lg:w-[70%] py-[6rem] lg:mx-auto lg:justify-between justify-end ">
+        <h2 className=" text-center lg:w-[33%] mb-7 lg:ml-6 text-indigo-700 dark:text-[#CBF281] text-5xl font-bold">
+          {t("skills")}
+        </h2>
+        <div className="flex  gap-8 lg:gap-16 flex-wrap lg:justify-around">
+          {Images.skills.map((item, index) => {
+            return (
+              <div className="xl:flex lg:gap-6 lg:w-[35%] m-auto" key={index}>
+                <img src={item.img} alt={item.name} />
+                <h3 className=" flex lg:grid text-neutral-500 text-2xl font-medium leading-9 lg:justify-center items-center dark: dark:text-white">
+                  {item.name}
+                </h3>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

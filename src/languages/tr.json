@@ -1,6 +1,45 @@
 
-{   "name":"mehmet",
-    "welcome": "Web Sitemize Hoş Geldiniz",
-    "about": "Hakkımızda",
-    "language":"SWITCH TO ENGLISH"
+{    "name":"mehmet", 
+"language":"SWITCH TO ENGLISH",
+"info":"Ben bir Frontend",
+"infoBr":"Geliştiricisiyim...",
+"info2":"...mükemmel kullanıcı deneyimlerine sahip,",
+"info2Br":"sağlam ve ön uç ürünleri oluşturmayı seven.",
+
+
+
+
+"skills":"Yetenekler",
+
+
+
+"profile":"Profil",
+"basicInfo":"Temel Bilgiler",
+"birthday":"Doğum Tarihi",
+"cityOfResidance":"Yaşadığı Şehir",
+"educationStatus":"Eğitim",
+"educationStatusBr":" Durumu",
+"preferredRole":"Tercih Ettiği",
+"preferredRoleBr":" Rol",
+
+
+
+
+"aboutMe":"Hakkımda",
+
+
+
+"projects":"Projeler",
+
+
+ 
+"projectInfo1":"Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar..",
+"projectInfo2":"Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
+"viewSite":"Siteyi Gör",
+
+
+
+"sendMe":"Bana mesaj gönderin!",
+"sendMe2":"Bir sorunuz veya öneriniz mi var,",
+"sendMe2Br":"yoksa sadece merhaba mı demek istiyorsunuz? Yaz gönder bana!"
 }

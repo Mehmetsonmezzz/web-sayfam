@@ -8,6 +8,10 @@ import insta from "./footer/instagram.svg";
 import twitter from "./footer/twitter.svg";
 import at from "./footer/at.svg";
 import codepen from "./footer/codepen.svg";
+import instaD from "./footer/instagramD.svg";
+import twitterD from "./footer/twitterD.svg";
+import atD from "./footer/atD.svg";
+import codepenD from "./footer/codepenD.svg";
 
 export const Images = {
   skills: [
@@ -23,5 +27,11 @@ export const Images = {
     { name: "Twitter", img: twitter },
     { name: "at", img: at },
     { name: "Codepen", img: codepen },
+  ],
+  socialsD: [
+    { name: "Instagram", img: instaD },
+    { name: "Twitter", img: twitterD },
+    { name: "at", img: atD },
+    { name: "Codepen", img: codepenD },
   ],
 };

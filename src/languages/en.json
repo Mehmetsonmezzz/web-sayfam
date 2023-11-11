@@ -1,7 +1,42 @@
 {
     "name":"mehmet", 
-    "welcome": "Welcome to My Website",
-    "about": "About Us",
-    "language":"TÜRKÇE'YE GEÇ"
+    "language":"TÜRKÇE'YE GEÇ",
+    "info":"I am a Frontend ",
+    "infoBr":"Developer...",
+    "info2":"...who likes to craft solid scalable frontend",
+    "info2Br":"products with great user experiences.",
+
+
+
+
+    "skills":"Skills",
+    "profile":"Profile",
+    "basicInfo":"Basic Info",
+    "birthday":"Birthday",
+    "cityOfResidance":"City",
+    "educationStatus":"Education",
+    "educationStatusBr":" Status",
+    "preferredRole":"Preferred",
+    "preferredRoleBr":" Role",
+
     
+
+
+    "aboutMe":"About Me",
+
+
+
+    "projects":"Projects",
+
+
+     
+    "projectInfo1":"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+    "projectInfo2":"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+    "viewSite":"View Site",
+
+
+
+    "sendMe":"Send me a message!",
+    "sendMe2":"Got a question or proposal, or just want",
+    "sendMe2Br":"to say hello? Go ahead."
   }
