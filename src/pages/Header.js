@@ -1,6 +1,6 @@
 import React from "react";
 import hero from "../assets/images/header/hero.png";
-import "./deneme.css";
+import "./Header.css";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useTheme } from "../contexts/ThemeContext";
 import githubLight from "../assets/images/header/githubLight.png";

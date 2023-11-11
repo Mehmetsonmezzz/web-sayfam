@@ -9,7 +9,7 @@ const Footer = () => {
         <h1 className=" text-5xl font-bold leading*[72px] text-[#4731D3] dark:text-[#8F88FF]">
           {t("sendMe")}
         </h1>
-        <p className="font-normal dark: text-white">
+        <p className="font-normal text-black dark:text-white">
           {t("sendMe2")}
           <br /> {t("sendMe2Br")}
         </p>

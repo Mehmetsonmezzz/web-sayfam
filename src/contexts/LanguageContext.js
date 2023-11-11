@@ -11,20 +11,19 @@ export const useLanguage = () => {
 
 export const LanguageProvider = ({ children }) => {
   const storedLanguage = localStorage.getItem("language");
-  const [language, setLanguage] = useState(storedLanguage || "en"); // Varsayılan dil: Türkçe
+  const [language, setLanguage] = useState(storedLanguage || "en");
   const translations = {
     en,
     tr,
   };
 
   useEffect(() => {
-    localStorage.setItem("language", language); // Tema değiştiğinde localStorage güncelle
+    localStorage.setItem("language", language);
   }, [language]);
 
-  const [postData, setPostData] = useState(null); // Post isteği sonucu gelen veriyi saklamak için state
+  const [postData, setPostData] = useState("");
 
   const t = (key) => {
-    // Eğer post isteği sonucu veri gelmişse, onu kullan
     if (postData) {
       return postData[key];
     }
@@ -34,7 +33,7 @@ export const LanguageProvider = ({ children }) => {
 
   const changeLanguage = (newLanguage) => {
     setLanguage(newLanguage);
-
+    localStorage.setItem("language", language);
     axios
       .post(
         "https://6549df66e182221f8d520b29.mockapi.io/keyvalue",
@@ -49,11 +48,6 @@ export const LanguageProvider = ({ children }) => {
         console.error("Post İsteği Hatası:", error);
       });
   };
-
-  useEffect(() => {
-    // Sayfa yüklendiğinde varsayılan dil olarak Türkçe'yi kullanın
-    changeLanguage("tr");
-  }, []);
 
   return (
     <LanguageContext.Provider
