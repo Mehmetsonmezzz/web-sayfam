@@ -21,7 +21,7 @@ export const LanguageProvider = ({ children }) => {
     localStorage.setItem("language", language);
   }, [language]);
 
-  const [postData, setPostData] = useState("");
+  const [postData, setPostData] = useState(false);
 
   const t = (key) => {
     if (postData) {
@@ -40,7 +40,6 @@ export const LanguageProvider = ({ children }) => {
         translations[newLanguage]
       )
       .then((response) => {
-        // Gelen veriyi state'e sakla
         console.log(response);
         setPostData(response.data);
       })
