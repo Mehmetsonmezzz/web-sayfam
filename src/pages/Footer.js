@@ -1,5 +1,5 @@
-import { Images } from "../../assets/images/images";
-import { useLanguage } from "../../contexts/LanguageContext";
+import { Images } from "../assets/images/images";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const Footer = () => {
   const { t, theme } = useLanguage();
